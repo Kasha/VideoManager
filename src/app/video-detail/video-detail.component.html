@@ -1,0 +1,21 @@
+<div class="container">
+  <div *ngIf="oVideoDetails">
+    <div class="jumbotron">
+      <h2>{{ oVideoDetails.name | uppercase }} Details<button class="btn-primary" (click)="goBack()">go back</button></h2>
+      <div class="title"><span>Name: </span>{{oVideoDetails.name}}</div>
+      <p class="description">{{oVideoDetails.description}}</p>
+    </div>
+    <video public-id="manipulation_video" 
+              clSrc="{{oVideoDetails.url}}"
+              controls="true" preload="none"
+              width="100%" height="auto"
+              crop="scale"
+              quality="auto"
+              fetch-format="auto" 
+              class="manipulation-video"
+              poster="{{oVideoDetails.image}}"
+              source-transformation='{ "webm": { "quality": "100"}, "mp4": { "quality": "100", "overlay": "text:verdana_30:Greetings!" } }'
+              fallback-content="Your browser does not support HTML5 video tags">
+    </video>
+  </div>
+</div>

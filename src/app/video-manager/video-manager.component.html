@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="jumbotron">
+    <h2>My videos</h2>
+
+    <input name="videoUrl" [(ngModel)]="videoUrl" type="text" style="display:none;"/>
+    <ul class="videos">
+        <li *ngFor="let video of videos">
+          <a routerLink="/detail/{{video.id}}">
+            <span class="badge">{{video.id}}</span> {{video.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
