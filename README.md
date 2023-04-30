@@ -9,6 +9,5 @@ https://drive.google.com/file/d/1Lg3nvP9izbfRqvVzTxuo-dOmsLPFDTVn/view?usp=shari
 
 Description:
 Test Scope: Interactive web application that allows the user to play videos from a predefined list. 
-Examples:
-http://veeca.me/fetchvideo/
+
 
